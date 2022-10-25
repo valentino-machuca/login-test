@@ -17,14 +17,36 @@
 
         .ibox{
             width: 100%;
-            margin-top: 20px;
+            margin-top: 10px;
             display: flex;
             flex-direction: column-reverse;
             justify-content: center;
             align-items: flex-start;
 
-            span{
+            .ok{
+                opacity: 1;
+                color: #25c281;
+            }
+
+            .required{
+                opacity: 1;
+                color: #2b90ef;
+            }
+
+            .error{
+                opacity: 1;
+                color: #ef4836;
+            }
+
+            p{
+                opacity: 0;
+                margin-left: 1px;
+                margin-top: 2px;
                 font-size: 12px;
+            }
+
+            span{
+                font-size: 14px;
                 margin-bottom: 5px;
             }
 
@@ -48,6 +70,18 @@
                     opacity: 1;
                 }
             }
+
+            .strengthbar{
+                margin-top: 10px;
+                margin-left: 5px;
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+
+                p{
+                    opacity: 1;
+                }
+            }
         }
 
         .btn{
@@ -58,7 +92,8 @@
             color: #EEEEEE;
             border-radius: 5px;
             margin-top: 25px;
-            width: 300px;
+            margin-left: 5px;
+            width: 345px;
             height: 40px;
 
             &:hover{
@@ -66,6 +101,14 @@
                 background-color: #EEEEEE;
                 border: 1px solid #713b2a;
                 cursor: pointer;
+            }
+
+            &:disabled{
+                transition: 0.5s;
+                color: #47261cfc;
+                background-color: #eeeeee97;
+                border: 1px solid #713b2a99;
+                cursor: not-allowed;
             }
         }
     }

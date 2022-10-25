@@ -10,7 +10,8 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 300px;
+        margin-left: 5px;
+        width: 345px;
         height: 40px;
         margin-top: 15px;
         border-radius: 5px;
@@ -100,5 +101,10 @@
             // box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.283);
             object-fit: cover;
         };
+    }
+
+    .complete{
+        transition: 0.5s;
+        width: 100%;
     }
 }
