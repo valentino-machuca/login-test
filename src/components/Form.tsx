@@ -64,7 +64,7 @@ const Form = ({setRegister} : any) => {
             </div>
 
             <div className={s.ibox}>
-                <PasswordStrengthBar password={data.password} scoreWords={['Weak!', 'Meh...', "ok, you're doing well", 'Good!', 'Oh lord! So strong']} className={s.strengthbar} shortScoreWord='Too short' onChangeScore={score => setScore(score)}/>
+                <PasswordStrengthBar password={data.password} scoreWords={['Weak!', 'Meh...', "ok, you're doing well", 'Good!', 'Fear of hackers']} className={s.strengthbar} shortScoreWord='Too short' onChangeScore={score => setScore(score)}/>
 
                 <input type="password" placeholder='A good password' name='password' onChange={e => handleChange(e)}/>
 
