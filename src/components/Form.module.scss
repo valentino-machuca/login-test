@@ -1,6 +1,6 @@
 .container{
     display: flex;
-    justify-content: centf;
+    justify-content: center;
     align-items: center;
     width: 100%;
     height: auto;
@@ -109,6 +109,18 @@
                 background-color: #eeeeee97;
                 border: 1px solid #713b2a99;
                 cursor: not-allowed;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .container{
+        form{
+            width: 80%;
+
+            .btn{
+                width: 95%;
             }
         }
     }

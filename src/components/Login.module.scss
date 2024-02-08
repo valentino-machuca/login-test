@@ -108,3 +108,103 @@
         width: 100%;
     }
 }
+
+
+@media screen and (max-width: 1000px) {
+    .container{
+        .contform{
+            position: absolute;
+            top: 8%;
+            left: 0;
+            z-index: 990;
+            width: 50%;
+            height: 65%;
+            border-radius: 20px;
+            background-color: white;
+            padding: 10%;
+        }
+
+        .background{
+            min-width: 100%;
+            top: 0;
+            left: 0;
+
+            .cover{
+                background-color: transparent;
+                backdrop-filter: blur(0);
+                color: #442d12;
+                width: 50%;
+                height: 10%;
+                position: absolute;
+                z-index: 999;
+                top: 10%;
+
+                span, h4{
+                    font-size: 32px;
+                }
+
+                span{
+                    font-weight: 300;
+                }
+    
+                h4{
+                    font-weight: 600;
+                }
+            }
+        }
+
+        .complete{
+            .cover{
+                width: 100% !important;
+                height: 100% !important;
+                top: 0 !important;
+                background-color: rgba(26, 26, 26, 0.39) !important;
+                backdrop-filter: blur(1px) !important;
+                color: #EEEEEE !important;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .container{
+
+        .background{
+            .cover{
+                top: 5%;
+            }
+        }
+
+        .contform{
+            width: 70%;
+            height: 75%;
+            top: 5%;
+            left: -10%;
+        }
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .container{
+        .contform{
+            width: 100vw;
+            height: 100vh;
+            border-radius: 0;
+            padding: 0;
+            margin: 0;
+            top: 0;
+            left: 0;
+
+            .title{
+                width: 80%;
+                h4{
+                    font-size: 18px;
+                }
+    
+                p{
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+}

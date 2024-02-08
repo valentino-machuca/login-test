@@ -23,7 +23,7 @@ const Login = () => {
       transition={{duration: 0.5}}
     >
 
-       (<motion.div className={s.contform} initial={{opacity: 0, x: -100}} animate={{opacity: 1, x: 0}} exit={{opacity: 0}}
+       <motion.div className={s.contform} initial={{opacity: 0, x: -100}} animate={{opacity: 1, x: 0}} exit={{opacity: 0}}
                     transition={{duration: 0.5, delay: 0.5}}>
           <div className={s.title}>
             <h4>Create an account</h4>
@@ -36,7 +36,7 @@ const Login = () => {
             <img src={google} alt="google" className={s.googleico}/>
             <p>Sign up with Google</p>
           </div>
-        </motion.div>)
+        </motion.div>
         <motion.div className={register ? s.background : `${s.background} ${s.complete}`}
           initial={{opacity: 0}}
           animate={{opacity: 1}}
